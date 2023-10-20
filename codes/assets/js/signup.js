@@ -86,20 +86,20 @@ function cadastrar() {
     {
       nomeCad: nome.value,
       userCad: usuario.value,
-      senhaCad: senha.value
+      senhaCad: senha.value,
     })
     
     localStorage.setItem('listaUser', JSON.stringify(listaUser))
    
-    msgSuccess.setAttribute('style', 'display: block')
+        msgSuccess.setAttribute('style', 'display: block')
         msgSuccess.innerHTML = '<strong>Cadastrando usuário...</strong>'
         msgError.setAttribute('style', 'display: none')
         msgError.innerHTML = ''
     
     setTimeout(()=>{
-        window.location.href = 'file:///C:/Users/Cliente/Desktop/%3B/codes/assets/html/signin.html'
+        window.location.href = 'http://127.0.0.1:5500/assets/html/signin.html'
     }, 2000)
-  
+
     
   } else {
     msgError.setAttribute('style', 'display: block')

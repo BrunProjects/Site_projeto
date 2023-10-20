@@ -6,138 +6,153 @@
 }
 
 input{
-    color: #fff;
-}
-body{
-background-color: black;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
+    color: #fff; /*cor das letras*/
 }
 
+body{
+background-color: black; /*cor de fundo*/
+}
+
+/*divisão onde fica o objeto do card*/
 .container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 100px;
+    display: flex; /*torna o conteudo flexivel para caso minimize o site*/
+    justify-content: center; /*coloca o conteudo centralizado*/
+    width: 100%; /*largura*/
+    margin-top: 100px; /*distanciamento da parte de cima*/
     
 }
 
+/*divisão onde os obejtos de verificação de login*/
 .card{
-    background-color: rgba(169, 169, 169, 0.116);
-    padding: 30px;
-    border-radius: 4%;
-    box-shadow: 3px 3px 1px 0px #ddcece17;
+    background-color: rgba(169, 169, 169, 0.116); /**/
+    padding: 30px; /*preenchimento*/
+    border-radius: 4%; /*arredondando as bordas*/ 
+    box-shadow: 3px 3px 1px 0px #ddcece17; /*sombra do botão*/
 }
 
+/*texto de cima*/
 h1{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #fff
+    text-align: center; /*centraliza o texto no meio*/
+    margin-bottom: 20px; /*distanciamento da parte de baixo*/
+    color: #fff /*cor da letra*/ 
   }
 
+/*locais onde colocam a senha e o usuário*/
   .label-float input{
-    width: 100%;
-    padding:  5px 5px;
-    display: inline-block;
-    border: 0;
-    border-bottom: 2px solid #272262;
-    background-color: transparent;
-    outline: none;
-    min-width: 180px;
-    font-size: 16px;
-    transition: all 3s ease-out;
-    border-radius: 0;
+    width: 100%; /*largura*/
+    padding:  5px 5px; /*preenchimento*/
+    display: inline-block; /*alinha os objetos*/
+    border: 0; /*ajusta o tamanho da borda pra 0*/
+    border-bottom: 2px solid #272262; /*cor da borda*/
+    background-color: transparent; /*transparece o fundo*/
+    outline: none; /*sem contorno*/
+    min-width: 180px; /*largura minima*/
+    font-size: 16px; /*tamanho das letras*/
+    transition: all 3s ease-out; /*anima o iniciamento do site*/
+    border-radius: 0; /*arredonda a borda pra 0*/
   }
 
+/*senha e usuario*/
   .label-float{
-    position: relative;
-    padding-top: 13px;
-    margin: 5%;
-    margin-bottom: 5%;
+    position: relative; /*define o lugar*/
+    padding-top: 13px; /*preenchimento/espaçamento do top*/
+    margin: 5%; /*cria uma margem de 5%*/
+    margin-bottom: 5%; /*cria uma margem de baixo com 5%*/
   }
 
+/*enquanto estiver escrevendo*/
   .label-float input:focus{
-    border-bottom: 2px solid #4038a0;
+    border-bottom: 2px solid #4038a0; /*altera a cor do */
   }
 
+/*texto de "senha" e "usuario"*/
   .label-float label{
-    color: #fff;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 13px;
-    transition: all .3s ease-out;
+    color: #fff; /*cor do texto*/
+    pointer-events: none; /*nenhuma ação do curso*/
+    position: absolute; /*define a posição*/
+    top: 0; /*distancia do topo*/
+    left: 0; /* distancia da esquerda*/
+    margin-top: 13px; /*margem entre o topo*/
+    transition: all .3s ease-out; /*animação do objeto*/
   }
 
+  /*local onde verifica o login*/
   .label-float input:focus + label,
   .label-float input:valid + label{
-  font-size: 13px;
-  margin-top: 0;
-  color: #fff
+  font-size: 13px; /*tamanho da fonte das letras*/
+  margin-top: 0; /*distancia entre o topo*/
+  color: #fff /*cor do texto*/
 }
 
+ /*botao*/
 button{
-    background-color: transparent;
-    border-color: #fff;
-    color:#fff;
-    padding: 7px;
-    font-weight: bold;
-    font-size: 12pt;
-    margin-top: 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    outline: none;
-    transition: all .4s ease-out;
+    background-color: transparent; /*fundo transparente*/
+    border-color: #fff; /* cor da borda*/
+    color:#fff; /*cor do texto*/
+    padding: 7px; /*espaçamento*/
+    font-weight: bold; /*negrito*/
+    font-size: 12pt; /*tamanho da fonte do texto*/
+    margin-top: 20px; /*margem entre o topo*/
+    border-radius: 4px; /*arredonda a borda*/
+    cursor: pointer; /*precisa clickar*/
+    outline: none; /*sem nada em baixo*/
+    transition: all .4s ease-out; /*transição*/
 }
 
+/*se o cursor estiver em cima do botao*/
 button:hover{
-    background-color: #272262;
-    color: #fff;
+    background-color: #272262; /*altera a cor */
+    color: #fff; /*cor do texto*/
 }
 
+/*divisão onde fica o botao*/
 .justify-center{
-    display: flex;
-    justify-content: center;
+    display: flex; /*o display pode ser ajustado ao tamanho de tela*/
+    justify-content: center; /*contraliza o botao*/
 }
 
+/*linha embaixo do botao*/
 hr{
-    margin-top: 10%;
-    margin-bottom: 10%;
-    width: 60%;
+    margin-top: 10%; /*distanciamento do topo*/
+    margin-bottom: 10%; /*distanciamento de baixo*/
+    width: 60%; /*largura*/ 
   }
 
+/*texto pro link de signin*/
 p{
-    color: blueviolet;
-  font-size: 14pt;
-  text-align: center;
+    color: blueviolet; /* cor do texto*/
+  font-size: 14pt; /*tamanho do texto*/
+  text-align: center; /* centraliza o texto no meio da divisão*/
 }
 
+/*link*/
 a{
-    color: blue;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all .3s ease-out;
+    color: blue; /*cor do texto*/
+    font-weight: bold; /*negrito*/
+    text-decoration: none; /*tira a decoração do link*/
+    transition: all .3s ease-out; /*anima a transição*/
 }
 
+/*altera a cor do link caso o cursor esteja em cima*/
 a:hover{
-    color: #272262;
+    color: #272262; /*cor do texto*/
 }
 
+/*mostrar senha*/
 .fa-eye{
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    cursor: pointer;
-    color: goldenrod;
+    position: absolute; /*define a posição*/
+    top: 15px; /*move pra cima*/
+    right: 10px; /*move pra direita*/
+    cursor: pointer; /*ativa quando liga*/
+    color: whitesmoke; /*cor do botão*/
 }
 
+/*se estiver algo errado no login*/
 #msgError{
-    text-align: center;
-    color: #ff0000;
-    background-color: #ffbbbb;
-    padding: 10px;
-    border-radius: 4px;
-    display: none;
+    text-align: center; /*centraliza o texto*/
+    color: #ff0000; /*cor do texto*/
+    background-color: #ffbbbb; /*cor de fundo*/
+    padding: 10px; /*preenchimento*/
+    border-radius: 4px; /*arredonda o objeto*/
+    display: none; /*não mostra se estiver tudo certo*/
   }

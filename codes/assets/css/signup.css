@@ -5,124 +5,135 @@
 }
 
 
-
+/**/
 body{
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: black; /**/
 }
 
+/**/
 .Container{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 100px;
+  display: flex; /**/
+  justify-content: center; /**/
+  width: 100%; /**/
+  margin-top: 100px; /**/
 }
 
+/**/
 .Card{
-background-color: rgba(169, 169, 169, 0.116);
-padding: 30px;
-border-radius: 4%;
-width: 400px;
-box-shadow: 3px 3px 1px 0px #00000060;
+background-color: rgba(169, 169, 169, 0.116); /**/
+padding: 30px; /**/
+border-radius: 4%; /**/
+width: 400px; /**/
+box-shadow: 3px 3px 1px 0px #00000060; /**/
 }
 
+/**/
 h1{
-  text-align: center;
-  margin-bottom: 20px;
-  color: #fff; 
+  text-align: center; /**/
+  margin-bottom: 20px; /**/
+  color: #fff; /**/
 }
 
+/**/
 .label-float input{
-  color: white;
-  width: 100%;
-  padding: 5px 5px;
-  background-color: transparent;
-  display: inline-block;
-  border: 0;
-  border-bottom: 2px solid #0d009c;
-  outline: none;
-  min-width: 180px;
-  font-size: 16px;
-  transition: all .3s ease-out;
-  border-radius: 0;
+  color: white; /**/
+  width: 100%; /**/
+  padding: 5px 5px; /**/
+  background-color: transparent; /**/
+  display: inline-block; /**/
+  border: 0; /**/
+  border-bottom: 2px solid #0079FF; /**/
+  outline: none; /**/
+  min-width: 180px; /**/
+  font-size: 16px; /**/
+  transition: all .3s ease-out; /**/
+  border-radius: 0; /**/
 }
 
+ /**/
 .label-float{
-  position: relative;
-  padding-top: 13px;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  position: relative; /**/
+  padding-top: 13px; /**/
+  margin-top: 5%; /**/
+  margin-bottom: 5%; /**/
 }
 
+ /**/
 .label-float input:focus{
-  border-bottom: 2px solid #4038a0;
+  border-bottom: 2px solid #4038a0; /**/
 }
 
+ /**/
 .label-float label{
-color: #fff;
-pointer-events: none;
-position: absolute;
-top: 0;
-left: 0;
-margin-top: 13px;
-transition: all .3s ease-out;
+color: #fff; /**/
+pointer-events: none; /**/
+position: absolute; /**/
+top: 0; /**/
+left: 0; /**/
+margin-top: 13px; /**/
+transition: all .3s ease-out; /**/
 }
 
+ /**/
 .label-float input:focus + label,
 .label-float input:valid + label{
-  font-size: 13px;
-  margin-top: 0;
-  color: #fff
+  font-size: 13px; /**/
+  margin-top: 0; /**/
+  color: #fff /**/
 }
 
+ /**/
 button{
-background-color: transparent;
-border-color: #fff;
-color: #fff;
-padding: 7px;
-font-weight: bold;
-font-size: 12pt;
-margin-top: 20px;
-border-radius: 4px;
-cursor: pointer;
-outline: none;
-transition: all .4s ease-out;
+background-color: transparent; /**/
+border-color: #fff; /**/
+color: #fff; /**/
+padding: 7px; /**/
+font-weight: bold; /**/
+font-size: 12pt; /**/
+margin-top: 20px; /**/
+border-radius: 4px; /**/
+cursor: pointer; /**/
+outline: none; /**/
+transition: all .4s ease-out; /**/
 }
 
+ /**/
 button:hover{
-  background-color: #0d009c;
-  color: #fff;
+  background-color: #DC0000; /**/
+  color: #fff; /**/
 }
 
+ /**/
 .justify-center{
-  display: flex;
-  justify-content: center;
+  display: flex; /**/
+  justify-content: center; /**/
 }
 
+ /**/
 .fa-eye{
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  cursor: pointer;
-  color: goldenrod;
+  position: absolute; /**/
+  top: 15px; /**/
+  right: 10px; /**/
+  cursor: pointer; /**/
+  color: whitesmoke; /**/
 }
 
+ /**/
 #msgError{
-  text-align: center;
-  color: #ff0000;
-  background-color: #ffbbbb;
-  padding: 10px;
-  border-radius: 4px;
-  display: none;
+  text-align: center; /**/
+  color: #ff0000; /**/
+  background-color: #ffbbbb; /**/
+  padding: 10px; /**/
+  border-radius: 4px; /**/
+  display: none; /**/
 }
 
+ /**/
 #msgSuccess{
-  text-align: center;
-  color: #00bb00;
-  background-color: #bbffbe;
-  padding: 10px;
-  border-radius: 4px;
-  display: none;
+  text-align: center; /**/
+  color: #00bb00; /**/
+  background-color: #bbffbe; /**/
+  padding: 10px; /**/
+  border-radius: 4px; /**/
+  display: none; /**/
 }

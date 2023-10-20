@@ -1,6 +1,7 @@
-let btn = document.querySelector('.fa-eye')
+let btn = document.querySelector('.fa-eye') //mostrar a senha
 
-btn.addEventListener('click', ()=>{
+
+btn.addEventListener('click', ()=>{ //mostra a senha quando pressionado o botao
   let inputSenha = document.querySelector('#senha')
   
   if(inputSenha.getAttribute('type') == 'password'){
@@ -10,7 +11,7 @@ btn.addEventListener('click', ()=>{
   }
 })
 
-function entrar(){
+function entrar(){ //botão pra acessar o site
     let usuario = document.querySelector('#usuario')
     let userLabel = document.querySelector('#userLabel')
     
@@ -25,10 +26,10 @@ function entrar(){
         user: null,
         senha: null
     }
-    listaUser = JSON.parse(localStorage.getItem('listauser'))
+    listaUser = JSON.parse(localStorage.getItem('listaUser')) //verifica se o usuario existe no localstorage
 
     listaUser?.forEach((item) => {
-        if(usuario.value == item.userCad && senha.value == item.senhaCad){
+        if(usuario.value == item.userCad && senha.value == item.senhaCad){ //se existir o usuario no localstorage vai definir como perfil valico
             userValid = {
                 nome: item.nomeCad,
                 user: item.userCad,
@@ -37,16 +38,16 @@ function entrar(){
         }
     })
 
-        if(usuario.value == userValid.user && senha.value == userValid.senha){
-            window.location.href='../../index.html'
+        if(usuario.value == userValid.user && senha.value == userValid.senha){ //se o usuario e a senha existirem, vai entrar no site
+            window.location.href='http://127.0.0.1:5500/index.html'
 
             let mathRandom = Math.random().toString(16).substr(2)
-            let token = mathRandom + mathRandom
+            let senha = mathRandom + mathRandom
     
-            localStorage.setItem('token', token)
+            localStorage.setItem('senha', senha)
             localStorage.setItem('userLogado', JSON.stringify(userValid))
         }
-        else{
+        else{ //se não existir vai aparecer uma mensagem dizendo que o usuario ou senha estão errados
             userLabel.setAttribute('style', 'color: red')
             usuario.setAttribute('style', 'border-color: red')
             senhaLabel.setAttribute('style', 'color: red')
