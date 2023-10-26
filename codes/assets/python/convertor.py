@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import filedialog
 import speech_recognition as sr
 
+
 def browse_file():
     file_path = filedialog.askopenfilename(filetypes=[("Arquivos WAV", "*.wav")])
     if file_path:
